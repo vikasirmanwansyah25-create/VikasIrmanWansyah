@@ -1,0 +1,109 @@
+.about {
+    background: var(--bg-card);
+    padding: 6rem 2rem;
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.about-grid {
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+}
+
+.about-intro {
+    font-size: 1.12rem;
+    color: var(--text-secondary);
+    line-height: 1.85;
+    text-align: center;
+    padding: 2rem;
+    background: #F8FAFC;
+    border-radius: 14px;
+    border-left: 4px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+.about-intro:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.info-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.info-card {
+    background: var(--bg-card);
+    border-radius: 14px;
+    padding: 1.6rem 1rem;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.info-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.2);
+}
+
+.info-card .info-icon {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 0.85rem;
+    background: var(--gradient-primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover .info-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
+}
+
+.info-card .info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.info-card .info-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    transition: color 0.3s ease;
+}
+
+.info-card:hover .info-label {
+    color: var(--primary);
+}
+
+.info-card .info-value {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+}
+
+.info-card:hover .info-value {
+    color: var(--primary);
+}

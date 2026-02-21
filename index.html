@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas | Portfolio Magang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/logbook.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Daily<span>Activity</span></a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#logbook" class="nav-link">Logbook</a></li>
+                <li><a href="#contact" class="btn-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+               Vikas Irman<span class="highlight">Wansyah</span>
+            </h1>
+            <p class="hero-description">
+                Mahasiswa Sistem Informasi | Sedang menjalani magang dengan fokus pada pengolahan data dan penyajian insight yang akurat untuk mendukung keputusan bisnis
+            </p>
+            <div class="hero-cta">
+                <a href="#about" class="btn-primary">Tentang Saya</a>
+                <a href="#logbook" class="btn-secondary">Lihat Logbook</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-frame">
+                <img src="images/Vikas.jpg" alt="Vikas">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-header">
+            <span class="section-tag">Tentang</span>
+            <h2 class="section-title">Mengenal Saya Lebih Dekat</h2>
+        </div>
+        
+        <div class="about-grid">
+            <div class="about-main">
+                <p class="about-intro">
+                    Mahasiswa semester 6 yang sedang magang untuk belajar lebih banyak tentang dinamika dunia kerja. Saya berfokus untuk meningkatkan keahlian saya dan mengumpulkan pengalaman berharga agar bisa berkontribusi lebih baik di masa depan
+                </p>
+            </div>
+            
+            <div class="about-sidebar">
+                <div class="info-list">
+                    <div class="info-card">
+                        <span class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        </span>
+                        <div class="info-content">
+                            <span class="info-label">Universitas</span>
+                            <span class="info-value">Universitas Trunojoyo Madura</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                        </span>
+                        <div class="info-content">
+                            <span class="info-label">Jurusan</span>
+                            <span class="info-value">Teknik Sistem Informasi</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        </span>
+                        <div class="info-content">
+                            <span class="info-label">Semester</span>
+                            <span class="info-value">Enam (6)</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </span>
+                        <div class="info-content">
+                            <span class="info-label">Durasi Magang</span>
+                            <span class="info-value">120 Hari</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="logbook" class="daily-log">
+        <div class="section-header">
+            <span class="section-tag">Logbook</span>
+            <h2 class="section-title">Perjalanan Magang</h2>
+            <p class="section-desc">Dokumentasi aktivitas dan pembelajaran selama masa magang</p>
+        </div>
+        
+        <div class="log-grid">
+            <article class="log-card">
+                <div class="card-header">
+                    <span class="log-day">Day 01 - 05</span>
+                    <span class="log-status">Completed</span>
+                </div>
+                <h3 class="log-title">Pengenalan Lingkungan Kerja</h3>
+                <p class="log-excerpt">Mengenal struktur organisasi, orientasi tools, dan setup environment pengembangan.</p>
+                <ul class="log-list">
+                    <li>Mengenal struktur organisasi perusahaan</li>
+                    <li>Orientasi tools dan teknologi</li>
+                    <li>Setup environment pengembangan</li>
+                </ul>
+                <a href="#" class="btn-read-more">
+                    Baca Selengkapnya
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+            </article>
+
+            <article class="log-card">
+                <div class="card-header">
+                    <span class="log-day">Day 16 - 17</span>
+                    <span class="log-status">Completed</span>
+                </div>
+                <h3 class="log-title">Implementasi Infrastruktur Server Berbasis Virtualisasi</h3>
+                <p class="log-excerpt">Mempelajari instalasi windows server berbasis virtualisasi menggunakan Virtualbox</p>
+                <ul class="log-list">
+                    <li>Belajar HTML, CSS, JS dasar</li>
+                    <li>Membuat landing page sederhana</li>
+                    <li>Prinsip responsive design</li>
+                </ul>
+                <a href="https://medium.com/@vikasirmanwannah25/menguasai-windows-server-tanpa-takut-laptop-meledak-b9d2dc3d6ee5" class="btn-read-more" target="_blank" rel="noopener noreferrer">
+                    Baca Selengkapnya
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Mari Berdiskusi</h2>
+            <p>Jika Anda ingin bertanya atau sekadar menyapa, jangan ragu untuk menghubungi saya.</p>
+            <a href="mailto:vikasirmanwannah@gmail.com" class="btn-contact-large">
+                vikasirmanwansyah25@gmail.com
+            </a>
+        </div>
+    </section>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+            document.querySelector('.mobile-menu-btn').classList.toggle('active');
+        }
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+                document.querySelector('.mobile-menu-btn').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
